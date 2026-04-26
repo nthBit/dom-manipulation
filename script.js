@@ -1,0 +1,29 @@
+const container = document.querySelector("#container");
+
+const content = document.createElement("div");
+content.classList.add("content");
+content.textContent = "This is the glorious text-content!";
+container.appendChild(content);
+
+const paragraph = document.createElement("p");
+paragraph.textContent = "Hey I'm red!";
+paragraph.style.color = "red";
+container.appendChild(paragraph);
+
+const subTitle = document.createElement("h3");
+subTitle.textContent = "Hey a blue h3!";
+subTitle.style.color = "blue";
+container.appendChild(subTitle);
+
+const specialContent = document.createElement("div");
+specialContent.style.backgroundColor = "pink";
+specialContent.style.border = "solid";
+container.appendChild(specialContent);
+
+const mainTitle = document.createElement("h1");
+specialContent.appendChild(mainTitle);
+mainTitle.textContent = "I'm in a div";
+
+const anotherParagraph = document.createElement("p");
+anotherParagraph.textContent = "ME TOO!";
+specialContent.appendChild(anotherParagraph);
